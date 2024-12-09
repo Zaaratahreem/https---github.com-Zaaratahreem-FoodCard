@@ -1,0 +1,146 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8b4513;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .recipe-card h1{
+    font-family: "Pacifico", cursive;
+    font-size: 70px;
+  }
+  .recipe-card {
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .recipe-title {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+   
+  }
+  
+  .recipe-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .ingredients, .instructions {
+    margin-bottom: 20px;
+  }
+  
+  .ingredients h2, .instructions h2 {
+    font-size: 1.5em;
+    color: #FAD6A5;
+    border-bottom: 2px solid #f0ad4e;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+}
+  
+  
+  ul, ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  li {
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .recipe-card {
+      padding: 15px;
+    }
+  
+    .recipe-title {
+      font-size: 1.5em;
+    }
+  
+    .recipe-info {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  .recipe-title {
+    color: #C0392B; /* Brick Red */
+  }
+  
+  .recipe-info {
+    color: #D35400; /* Rusty Orange */
+  }
+  
+  .ingredients h2, .instructions h2 {
+    color: #fff; /* Golden Yellow */
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  li {
+    color: #8E5E3B; /* Warm Brown */
+  }
+/* Smooth Transitions for Ingredients and Steps */
+.ingredients ul, .instructions ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .ingredients ul li, .instructions ol li {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .ingredients ul li:hover, .instructions ol li:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  /* accordion style */
+  .accordion {
+    background-color: #8b4513;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #8b45138d; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  @media (min-width: 534px) {
+    .ingredients, .instructions {
+      margin-left: 151px;
+  }
+}
